@@ -10,16 +10,17 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *tmp;
-	
+
 	tmp = NULL;
 
 	tmp = calloc(1, sizeof(binary_tree_t));
 	if (tmp != NULL)
 	{
-		memset(tmp, 1, 1, sizeof(binary_tree_t));
+		memset(tmp, 1, sizeof(binary_tree_t));
 
 		tmp->parent = parent;
 		tmp->n = value;
-		
+
 		return (tmp);
+	}
 }
